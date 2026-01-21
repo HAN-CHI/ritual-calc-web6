@@ -1,0 +1,15 @@
+project
+│
+├── index.html            (原本的 HTML，但會變得很乾淨)
+├── styles.css            (原本的 style 內容)
+│
+└── src                  (原始碼核心)
+    ├── data             (存放那些超長的數據)
+    │   ├── constants.js  (基礎常數：生肖、五行)
+    │   └── funeralData.js(仙命數據、破月數據)
+    │
+    ├── logic            (純計算邏輯，不碰 UI)
+    │   ├── calendar.js   (日期轉換邏輯)
+    │   └── fengshui.js   (吉凶方位計算)
+    │
+    └── main.js           (總指揮：負責操作 UI 與事件綁定)
